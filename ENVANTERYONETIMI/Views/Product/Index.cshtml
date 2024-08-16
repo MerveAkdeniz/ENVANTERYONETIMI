@@ -1,0 +1,33 @@
+﻿@model IEnumerable<ENVANTERYONETIMI.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Products</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Min stok seviyesi: </th>
+            <th>Ürün Stokta mı? :  </th>
+            <th>Ürünün satın alma maliyeti: </th>
+            <th>Ürünün satış fiyatı : </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProductName</td>
+                <td>@product.SafetyStockLevel</td>
+                <td>@product.FinishedGoodsFlag</td>
+                <td>@product.StandardCost</td>
+                <td>@product.ListPrice</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>

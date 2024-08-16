@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ENVANTERYONETIMI.Models.ProductCategory>
+
+@{
+    ViewData["Title"] = "Product Categories";
+}
+
+<h1>Product Categories</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Ürün Üretildi mi </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.CategoryID</td>
+                <td>@product.CategoryName</td>
+            </tr>
+        }
+    </tbody>
+</table>
