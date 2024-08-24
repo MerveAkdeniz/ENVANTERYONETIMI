@@ -1,22 +1,137 @@
 html {
-  font-size: 14px;
-}
+    position: relative;
+    min-height: 100%;
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
 }
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
+
+
+.container-fluid {
+    height: 100vh; /* Sayfa yüksekliği kadar */
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar {
+    height: 100vh; /* Kenar çubuğunun yüksekliği tam ekran */
+    position: fixed; /* Kenar çubuğunu sabitler */
+    top: 0;
+    left: 0;
+    width: 300px; /* Kenar çubuğu genişliği */
+    background-color: black;
+    z-index: 1000;
+}
+
+/* Navbar-container'ı üstte hizala ve tam genişlikte yap */
+.navbar {
+    width: 100%;
+    position: relative; /* Navbar'ı sayfanın üstünde tut */
+}
+
+
+
+.navbar-brand {
+    font-size: 1.80rem; /* Yazı boyutu */
+    font-weight: bold; /* Yazı kalınlığı */
+    text-align: center; /* Yazıyı ortalar */
+    color: white;
+    background-color: transparent; /* Varsayılan arka plan rengi */
+    transition: background-color 0.3s ease; /* Geçiş efekti ekler */
+    margin-bottom: 30px;
+}
+    .navbar-brand:hover {
+        background-color: transparent; /* Üzerine gelindiğinde arka plan rengini değiştirir */
+        color: white;
+    }
+
+
+.navbar-collapse {
+    flex-grow: 1; /* Navbar'da büyümeyi engeller */
+    padding: 0; /* İç boşlukları kaldırır */
+    margin: 0; /* Dış boşlukları kaldırır */
+    width: 105%; /* Tam genişlik */
+    margin-top: 70px;
+}
+
+
+.navbar-nav {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; /* Menü öğelerini dikey hizalar */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Menü öğeleri genişliği sidebar genişliğine eşitler */
+    margin-left: 0; /* Menü öğelerini sola hizalar */
+    padding-left: 0; /* Menü öğelerini sola hizalar */
+  
+}
+
+.nav-link {
+    display: block; /* Bağlantıların tam genişlikte olmasını sağlar */
+    width: 100%; /* Bağlantı genişliği menü genişliği kadar olsun */
+    padding: 1rem; /* Menü öğelerine iç boşluk ekler */
+    color: white; /* Yazı rengi beyaz */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    background-color: transparent; /* Varsayılan arka plan rengi */
+    transition: background-color 0.3s ease; /* Geçiş efekti ekler */
+    border-radius: 0; /* Köşeleri yuvarlatmayı kaldırır */
+}
+
+ /* Üzerine gelindiğinde arka plan rengini değiştirir */
+    .nav-link:hover {
+        background-color: #FFA500; /* Üzerine gelindiğinde arka plan rengini değiştirir */
+        color: white;
+    }
+
+/* Kenar çubuğundaki listeyi dikey yap */
+.sidebar .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Liste öğelerini dikey olarak hizalar */
+    padding: 0;
+    margin: 0;
+   
+}
+.nav-item {
+    padding: 8px 12px; /* Menü öğeleri arasına biraz iç boşluk ekler */
+    
+}
+
+
+
+
+.sidebar .nav-link {
+    display: block; /* Bağlantıların tam genişlikte olmasını sağlar */
+    padding: 1rem; /* Menü öğelerine iç boşluk ekler */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    
+}
+
+
+.main {
+    margin-left: 300px; /* Kenar çubuğunun genişliği kadar margin ekleyin */
+    padding: 1rem; /* İçeriğin etrafında boşluk bırakır */
+    height: 100vh;
+    overflow-y: auto; /* Uzun içerik için kaydırma çubuğu ekler */
+}
+
+.pb-3 {
+    font-size: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

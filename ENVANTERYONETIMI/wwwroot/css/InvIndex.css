@@ -1,0 +1,18 @@
+﻿.container {
+    background-color: #C19A6B;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.header {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right:200px;
+}
+.filterForm {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin-left: 20px;
+}

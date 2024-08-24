@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ENVANTERYONETIMI.Models.InventoryViewModel>
+<h1>Inventory List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Category Name</th>
+            <th>Subcategory Name</th>
+            @* <th>Quantity</th>
+            <th>Standard Cost</th>
+            <th>List Price</th>
+            <th>Shelf</th>
+            <th>Bin</th> *@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.CategoryName</td>
+                <td>@item.SubcategoryName</td>
+                @* <td>@item.Quantity</td>
+            <td>@item.StandardCost</td>
+            <td>@item.ListPrice</td>
+            <td>@item.Shelf</td>
+            <td>@item.Bin</td> *@
+            </tr>
+        }
+    </tbody>
+</table>
