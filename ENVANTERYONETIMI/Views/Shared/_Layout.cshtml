@@ -28,7 +28,13 @@
                                     <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home" style="margin-right: 15px;font-size:25px;"></i>Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " asp-area="" asp-controller="InventoryViewModel" asp-action="Index"><i class="fa-solid fa-warehouse" style="margin-right: 15px;font-size:25px;"></i>Envanter Takip</a>
+                                    <a class="nav-link " asp-area="" asp-controller="InventoryViewModel" asp-action="Index"><i class="fa-solid fa-warehouse" style="margin-right: 15px;font-size:25px;"></i>Products List</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " asp-area="" asp-controller="Product" asp-action="Index"><i class="fa-solid fa-archive" style="margin-right: 15px;font-size:25px;"></i>Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " asp-area="" asp-controller="ProductDetail" asp-action="Index"><i class="fa fa-th-list" style="margin-right: 15px;font-size:25px;"></i>Product Detail</a>
                                 </li>
                             </ul>
                         </div>
@@ -37,7 +43,7 @@
            </div>
             <div class="col-10 main">
                 <div class="contrainer">
-                    <div class="row col-8">
+                    <div class="row">
                         <main role="main" class="pb-3">
                             @RenderBody()
                         </main>

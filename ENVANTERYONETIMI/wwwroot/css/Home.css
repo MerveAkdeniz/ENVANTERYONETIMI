@@ -1,0 +1,138 @@
+﻿
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    background-color: #F5FFFA; /* Arka plan rengi */
+    padding: 5px;
+    margin-left: 0;
+}
+h5{
+    text-align:center;
+}
+.card-overview {
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    background-color: #F5FFFA; /* Arka plan rengi */
+    padding: 5px;
+    margin-top: 40px;
+    margin-left: 0;
+}
+
+.card-overview-body {
+    padding: 40px;
+}
+
+.box1 {
+    background-color: #808080; /* Açık gri arka plan rengi */
+    border: 1px solid #ddd; /* Kenarlık rengi */
+    border-radius: 0.25rem; /* Kenar köşe yuvarlama */
+    padding: 1rem; /* İç boşluk */
+    display: flex; /* Flexbox kullanarak içerikleri hizala */
+    flex-direction: column; /* İçerikleri dikey olarak hizala */
+    justify-content: center; /* İçeriklerin dikeyde ortalanması */
+    height: 150px; /* Kutu yüksekliği */
+    width: 300px;
+    margin-right: 30px;
+}
+
+.box1-content {
+    display: flex; /* Flexbox kullanarak img ve text yan yana hizala */
+    align-items: center; /* Dikey hizalama */
+}
+
+.box1-image {
+    display: flex; /* Flexbox kullanarak img'i hizala */
+    align-items: center; /* Dikeyde ortala */
+    justify-content: flex-start; /* Yatayda sola hizala */
+    padding: 10px;
+    background-color: #F5FFFA	; /* Arka plan rengi */
+    border: 1px solid #ddd; /* Kenarlık rengi */
+    border-radius: 0.25rem; /* Kenar köşe yuvarlama */
+    margin-right: 20px; /* İmage ile text arasına boşluk ekler */
+    margin-left: 5px;
+}
+
+.box1-image img {
+        width: 70px;
+        height: 70px;
+}
+
+.overview-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Text'in sola hizalanması */
+}
+.text-number{
+    font-size:50px;
+    
+}
+.text-main{
+    font-size:15px;
+    margin-top:0;
+}
+h3{
+    font-size:30px;
+}
+.overview {
+    margin-bottom: 40px;
+}
+
+
+
+.card-category {
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    background-color: #F5FFFA; /* Arka plan rengi */
+    padding: 5px;
+    margin-left: 0;
+}
+.card-category-body {
+    padding: 40px;
+}
+.box2 {
+    background-color: #808080; /* Açık gri arka plan rengi */
+    border: 1px solid #ddd; /* Kenarlık rengi */
+    border-radius: 0.25rem; /* Kenar köşe yuvarlama */
+    padding: 1rem; /* İç boşluk */
+    display: flex; /* Flexbox kullanarak içerikleri hizala */
+    flex-direction: column; /* İçerikleri dikey olarak hizala */
+    justify-content: center; /* İçeriklerin dikeyde ortalanması */
+    height: 150px; /* Kutu yüksekliği */
+    width: 300px;
+    margin-right: 30px;
+}
+
+.box2-content {
+    display: flex; /* Flexbox kullanarak img ve text yan yana hizala */
+    align-items: center; /* Dikey hizalama */
+}
+
+.box2-image {
+    display: flex; /* Flexbox kullanarak img'i hizala */
+    align-items: center; /* Dikeyde ortala */
+    justify-content: flex-start; /* Yatayda sola hizala */
+    padding: 10px;
+    background-color: #F5FFFA; /* Arka plan rengi */
+    border: 1px solid #ddd; /* Kenarlık rengi */
+    border-radius: 0.25rem; /* Kenar köşe yuvarlama */
+    margin-right: 20px; /* İmage ile text arasına boşluk ekler */
+    margin-left: 5px;
+}
+
+.box2-image img {
+        width: 70px;
+        height: 70px;
+}
+.category-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Text'in sola hizalanması */
+}
+.im-image {
+    width: 100%; /* Genişliği kutunun tümüne yay */
+    height: 100%; /* Yüksekliği kutunun tümüne yay */
+    object-fit: cover; /* Resmi kutunun boyutlarına göre kapla */
+}

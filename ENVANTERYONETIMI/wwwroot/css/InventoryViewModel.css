@@ -1,0 +1,71 @@
+﻿body{
+    padding:100px;
+}
+.container {
+    box-sizing: border-box;
+    background-color: #808080;
+    margin-left: 20px;
+    padding: 40px;
+    overflow-x: auto;
+}
+
+.header {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.filterForm {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3px;
+    font-size: 20px;
+    margin-left: 5px;
+    background-color: #CCCCFF;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #FFA500;
+    align-items: center;
+}
+
+#tableContainer table {
+    box-sizing: border-box;
+    padding: 10px; /* Konteyner içine boşluk ekler */
+    margin-top: 20px;
+    margin-left: 5px;
+    overflow-x: auto; /* Yatay kaydırma çubuğu ekler */
+}
+
+#tableContainer th, #tableContainer td {
+    border: 2px solid black; /* Hücre kenarlıkları */
+    text-align: left; /* Metni sola yaslar */
+}
+
+
+
+#tableContainer th {
+    background-color: #CCCCFF; /* Başlık hücreleri için arka plan rengi */
+    color: #333; /* Başlık hücreleri için metin rengi */
+    text-align: center;
+}
+
+#tableContainer tr {
+    background-color: #CCCCFF ; /* Tüm satırlar için beyaz arka plan, !important ile zorunlu kılınır */
+}
+
+.col-1 {
+    position: fixed; /* Kenar çubuğunu sabitler */
+    top: 0;
+    right: 0;
+    width: 400px; /* Kenar çubuğu genişliği */
+    z-index: 1000;
+}
+
+img {
+    padding: 20px;
+    width: 380px; /* Resmin genişliğini kapsayıcıya uyacak şekilde ayarlar */
+    height: auto; /* Resmin yüksekliğini oranına göre ayarlar */
+    border-radius: 1px;
+}

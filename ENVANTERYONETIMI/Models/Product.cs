@@ -10,7 +10,11 @@ namespace ENVANTERYONETIMI.Models
 
         [Required]
         public string ProductName { get; set; }
+
+        public string ImageUrl { get; set; }
+
         [Required]
+
         public short SafetyStockLevel { get; set; }// güvenli stok seviyesidir. min seviye
         [Required]
         public bool FinishedGoodsFlag { get; set; }// ürün bitmişse 1 ; 0 ise stokta

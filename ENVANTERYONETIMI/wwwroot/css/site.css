@@ -1,12 +1,6 @@
-html {
-    position: relative;
-    min-height: 100%;
-
-}
 body {
-    margin-bottom: 60px;
+    background-color: #808080;
 }
-
 
 
 .container-fluid {
@@ -21,9 +15,9 @@ body {
     position: fixed; /* Kenar çubuğunu sabitler */
     top: 0;
     left: 0;
-    width: 300px; /* Kenar çubuğu genişliği */
-    background-color: black;
+    background-color: #808080;
     z-index: 1000;
+    width:300px;
 }
 
 /* Navbar-container'ı üstte hizala ve tam genişlikte yap */
@@ -43,10 +37,10 @@ body {
     transition: background-color 0.3s ease; /* Geçiş efekti ekler */
     margin-bottom: 30px;
 }
-    .navbar-brand:hover {
+.navbar-brand:hover {
         background-color: transparent; /* Üzerine gelindiğinde arka plan rengini değiştirir */
         color: white;
-    }
+}
 
 
 .navbar-collapse {
@@ -83,7 +77,7 @@ body {
 
  /* Üzerine gelindiğinde arka plan rengini değiştirir */
     .nav-link:hover {
-        background-color: #FFA500; /* Üzerine gelindiğinde arka plan rengini değiştirir */
+        background-color: #CCCCFF; /* Üzerine gelindiğinde arka plan rengini değiştirir */
         color: white;
     }
 

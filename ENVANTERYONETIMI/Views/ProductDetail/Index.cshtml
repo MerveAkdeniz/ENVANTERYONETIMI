@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ENVANTERYONETIMI.Models.ProductDetail>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="~/css/ProductDetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body >
+    <div class="column">
+        <h2>Kategoriler:</h2>
+
+        @foreach (var category in ViewBag.DistinctCategories as List<string>)
+        {
+            <button class="category-button" data-category="@category">@category</button>
+        }
+    </div>
+    <div id="product-list">
+        @foreach (var product in Model )
+        {
+            <div class="card">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="card-img-top" src="~/images/products/@(product.ProductID + ".jpg")" alt="@product.ProductName" />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div class="text-section">
+                                    <h3 class="card-title">@product.ProductName</h3>
+                                    <p class="card-text">Quantity: @product.Quantity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/ProductDetail.js" asp-append-version="true"></script>
+</body>
+</html>

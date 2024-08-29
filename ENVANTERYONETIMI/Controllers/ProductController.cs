@@ -1,16 +1,20 @@
 ﻿using ENVANTERYONETIMI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
 
 namespace ENVANTERYONETIMI.Controllers
 {
     public class ProductController : Controller
     {
         private readonly ApplicationDBContext _context;
+        
 
         public ProductController(ApplicationDBContext context)
         {
             _context = context;
+            
+
         }
 
         // GET: Product/Index
@@ -33,11 +37,12 @@ namespace ENVANTERYONETIMI.Controllers
         {
             if (ModelState.IsValid)
             {
+               
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-
+           
             return View(product);
         }
 
@@ -72,6 +77,7 @@ namespace ENVANTERYONETIMI.Controllers
             {
                 try
                 {
+                   
                     _context.Update(product);
                     await _context.SaveChangesAsync();
                 }

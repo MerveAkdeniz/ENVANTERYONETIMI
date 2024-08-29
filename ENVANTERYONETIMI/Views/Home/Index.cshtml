@@ -1,8 +1,139 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<ENVANTERYONETIMI.Models.ProductDetail>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="~/css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="card">
+                                <h5>HOME</h5>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="overview">
+                    <div class="card-overview">
+                        <h3> OVER VIEW </h3>
+                        <div class="card-overview-body">
+                            <div class="row">
+                                <div class="box1 col-4 ">
+                                    <div class="box1-content">
+                                        <div class="box1-image"><img src="~/images/icons/producticon.png" alt="total products"></div>
+                                        <div class="overview-text">
+                                            <p class="text-number">@ViewBag.ProductCount</p>
+                                            <p class="text-main">Total Products</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="box1 col-4">
+                                    <div class="box1-content">
+                                        <div class="box1-image"><img src="~/images/icons/totalstock.png" alt="total stocks"></div>
+                                        <div class="overview-text">
+                                            <p class="text-number">@ViewBag.TotalStock</p>
+                                            <p class="text-main">Total Stock</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="box1 col-4">
+                                    <div class="box1-content">
+                                        <div class="box1-image"><img src="~/images/icons/unsafetystock.png" alt="Total Product Below Safety Stock Level"></div>
+                                        <div class="overview-text">
+                                            <p class="text-number">@ViewBag.ProductCountBelowSafetyStock</p>
+                                            <p class="text-main">Total Product Below Safety Stock Level</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detail">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card-category">
+                                <h3> TOTAL CATEGORY </h3>
+                                <div class="card-category-body">
+                                    <div class="row">
+                                        <div class="box2 ">
+                                            <div class="box2-content">
+                                                <div class="box2-image"><img src="~/images/icons/totalcategory.png" alt="total products"></div>
+                                                <div class="category-text">
+                                                    <p class="text-number">@ViewBag.TotalCategories</p>
+                                                    <p class="text-main">Total Category</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="card-category">
+                                <h3> TOTAL SUB CATEGORY </h3>
+                                <div class="card-category-body">
+                                    <div class="row">
+                                        <div class="box2 ">
+                                            <div class="box2-content">
+                                                <div class="box2-image"><img src="~/images/icons/totalsubcategory.png" alt="total products"></div>
+                                                <div class="category-text">
+                                                    <p class="text-number">@ViewBag.TotalSubcategories</p>
+                                                    <p class="text-main">Total Sub Category</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-category">
+  
+                                <div class="card-category-body">
+                                    <img src="~/images/icons/inventorymanagement.jpg" alt="total products" class="im-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/InvIndex.js" asp-append-version="true"></script>
+</body>
+</html>

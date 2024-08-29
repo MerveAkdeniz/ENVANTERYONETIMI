@@ -1,4 +1,5 @@
-﻿function submitForm(event) {
+﻿
+function submitForm(event) {
     event.preventDefault(); // Formun varsayılan gönderimini engeller
 
     var form = document.querySelector('.filterForm');
@@ -8,6 +9,8 @@
     // Debug için seçilen kolonları konsola yazdıralım
     console.log("Seçilen Kolonlar:", selectedColumns);
 
+
+    //burası ajax ile yapılmıştır. Sunucudan dinamik olarak tablo verisi almak için AJAX kullanıyoruz.
     $.post('/InventoryViewModel/GetTable', { selectedColumns: selectedColumns })
         .done(function (data) {
             var tableContainer = document.querySelector('#tableContainer');
